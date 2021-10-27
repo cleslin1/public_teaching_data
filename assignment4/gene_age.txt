@@ -1,0 +1,308 @@
+HGNC    Symbol  HAGRID  Common name Function(s) References  Interactions
+A2M	139	alpha-2-macroglobulin		5	21
+ABL1	78	ABL proto-oncogene 1, non-receptor tyrosine kinase		5	69
+ADCY5	255	adenylate cyclase 5		1	1
+AGPAT2	187	1-acylglycerol-3-phosphate O-acyltransferase 2		3	0
+AGTR1	264	angiotensin II receptor, type 1		5	2
+AIFM1	135	apoptosis-inducing factor, mitochondrion-associated, 1		4	16
+AKT1	35	v-akt murine thymoma viral oncogene homolog 1		45	91
+APEX1	195	APEX nuclease (multifunctional DNA repair enzyme) 1		11	40
+APOC3	102	apolipoprotein C-III		7	0
+APOE	138	apolipoprotein E		28	11
+APP	137	amyloid beta (A4) precursor protein		35	125
+APTX	95	aprataxin		6	6
+AR	110	androgen receptor		8	91
+ARHGAP1	249	Rho GTPase activating protein 1		1	9
+ARNTL	251	aryl hydrocarbon receptor nuclear translocator-like		11	16
+ATF2	193	activating transcription factor 2		10	59
+ATM	9	ATM serine/threonine kinase		42	75
+ATP5O	146	ATP synthase, H+ transporting, mitochondrial F1 complex, O subunit		3	4
+ATR	231	ATR serine/threonine kinase		7	49
+BAK1	278	BCL2-antagonist/killer 1		3	11
+BAX	119	BCL2-associated X protein		21	23
+BCL2	69	B-cell CLL/lymphoma 2		30	47
+BDNF	191	brain-derived neurotrophic factor		27	2
+BLM	68	Bloom syndrome, RecQ helicase-like		15	45
+BMI1	188	BMI1 proto-oncogene, polycomb ring finger		13	41
+BRCA1	61	breast cancer 1, early onset		21	131
+BRCA2	79	breast cancer 2, early onset		8	26
+BSCL2	186	Berardinelli-Seip congenital lipodystrophy 2 (seipin)		3	0
+BUB1B	197	BUB1 mitotic checkpoint serine/threonine kinase B		10	25
+BUB3	240	BUB3 mitotic checkpoint protein		4	16
+C1QA	287	complement component 1, q subcomponent, A chain		1	2
+CACNA1A	133	calcium channel, voltage-dependent, P/Q type, alpha 1A subunit		7	4
+CAT	107	catalase		37	15
+CCNA2	177	cyclin A2		3	39
+CDC42	250	cell division cycle 42		2	24
+CDK1	201	cyclin-dependent kinase 1		4	59
+CDK7	299	cyclin-dependent kinase 7		0	33
+CDKN1A	284	cyclin-dependent kinase inhibitor 1A (p21, Cip1)		7	70
+CDKN2A	226	cyclin-dependent kinase inhibitor 2A		35	50
+CDKN2B	288	cyclin-dependent kinase inhibitor 2B (p15, inhibits CDK4)		2	2
+CEBPA	88	CCAAT/enhancer binding protein (C/EBP), alpha		14	35
+CEBPB	89	CCAAT/enhancer binding protein (C/EBP), beta		9	55
+CETP	262	cholesteryl ester transfer protein, plasma		7	0
+CHEK2	247	checkpoint kinase 2		8	35
+CISD2	265	CDGSH iron sulfur domain 2		2	8
+CLOCK	252	clock circadian regulator		17	12
+CLU	220	clusterin		16	35
+CNR1	282	cannabinoid receptor 1 (brain)		4	0
+COQ7	132	coenzyme Q7 homolog, ubiquinone (yeast)		11	1
+CREB1	192	cAMP responsive element binding protein 1		15	49
+CREBBP	64	CREB binding protein		11	123
+CSNK1E	244	casein kinase 1, epsilon		7	17
+CTF1	304	cardiotrophin 1		0	4
+CTGF	206	connective tissue growth factor		3	4
+CTNNB1	223	catenin (cadherin-associated protein), beta 1, 88kDa		16	102
+DBN1	228	drebrin 1		4	20
+DDIT3	203	DNA-damage-inducible transcript 3		4	19
+DGAT1	291	diacylglycerol O-acyltransferase 1		0	1
+DLL3	225	delta-like 3 (Drosophila)		12	0
+E2F1	18	E2F transcription factor 1		14	52
+EEF1A1	189	eukaryotic translation elongation factor 1 alpha 1		5	43
+EEF1E1	266	eukaryotic translation elongation factor 1 epsilon 1		3	0
+EEF2	103	eukaryotic translation elongation factor 2		5	36
+EFEMP1	260	EGF containing fibulin-like extracellular matrix protein 1		3	2
+EGF	48	epidermal growth factor		15	13
+EGFR	40	epidermal growth factor receptor		13	145
+EGR1	76	early growth response 1		5	22
+EIF5A2	289	eukaryotic translation initiation factor 5A2		0	0
+ELN	230	elastin		9	2
+EMD	121	emerin		4	27
+EP300	94	E1A binding protein p300		11	161
+EPOR	52	Erythropoietin receptor		5	16
+EPS8	267	epidermal growth factor receptor pathway substrate 8		5	11
+ERBB2	41	erb-b2 receptor tyrosine kinase 2		9	41
+ERCC1	149	excision repair cross-complementation group 1		13	8
+ERCC2	11	excision repair cross-complementation group 2		19	16
+ERCC3	104	excision repair cross-complementation group 3		10	22
+ERCC4	261	excision repair cross-complementation group 4		7	6
+ERCC5	109	excision repair cross-complementation group 5		5	10
+ERCC6	92	excision repair cross-complementation group 6		16	32
+ERCC8	12	excision repair cross-complementation group 8		10	16
+ESR1	216	estrogen receptor 1		23	127
+FAS	115	Fas cell surface death receptor		26	25
+FEN1	114	flap structure-specific endonuclease 1		10	22
+FGF21	293	fibroblast growth factor 21		0	0
+FGF23	259	fibroblast growth factor 23		8	2
+FGFR1	169	fibroblast growth factor receptor 1		8	15
+FLT1	171	fms-related tyrosine kinase 1		3	8
+FOS	50	FBJ murine osteosarcoma viral oncogene homolog		19	47
+FOXM1	131	forkhead box M1		21	24
+FOXO1	124	forkhead box O1		43	33
+FOXO3	123	forkhead box O3		56	34
+FOXO4	183	forkhead box O4		19	18
+GCLC	237	glutamate-cysteine ligase, catalytic subunit		7	2
+GCLM	238	glutamate-cysteine ligase, modifier subunit		6	4
+GDF11	309	growth differentiation factor 11		0	0
+GH1	26	growth hormone 1		66	4
+GHR	1	growth hormone receptor		32	23
+GHRH	2	growth hormone releasing hormone		14	2
+GHRHR	222	growth hormone releasing hormone receptor		16	2
+GPX1	153	glutathione peroxidase 1		27	4
+GPX4	257	glutathione peroxidase 4		2	6
+GRB2	122	growth factor receptor-bound protein 2		7	77
+GRN	300	granulin		0	8
+GSK3A	295	glycogen synthase kinase 3 alpha		0	26
+GSK3B	97	glycogen synthase kinase 3 beta		7	67
+GSR	154	glutathione reductase		12	7
+GSS	155	glutathione synthetase		6	3
+GSTA4	156	glutathione S-transferase alpha 4		8	1
+GSTP1	157	glutathione S-transferase pi 1		13	9
+GTF2H2	111	general transcription factor IIH, polypeptide 2, 44kDa		3	10
+H2AFX	212	H2A histone family, member X		12	76
+HBP1	196	HMG-box transcription factor 1		5	14
+HDAC1	151	histone deacetylase 1		11	117
+HDAC2	207	histone deacetylase 2		7	77
+HDAC3	25	histone deacetylase 3		7	59
+HELLS	101	helicase, lymphoid-specific		6	12
+HESX1	184	HESX homeobox 1		4	4
+HIC1	253	hypermethylated in cancer 1		2	9
+HIF1A	65	hypoxia inducible factor 1, alpha subunit (basic helix-loop-helix transcription factor)		17	62
+HMGB1	176	high mobility group box 1		9	30
+HMGB2	178	high mobility group box 2		5	10
+HOXB7	213	homeobox B7		5	14
+HOXC4	214	homeobox C4		4	8
+HRAS	38	Harvey rat sarcoma viral oncogene homolog		21	12
+HSF1	125	heat shock transcription factor 1		23	31
+HSP90AA1	74	heat shock protein 90kDa alpha (cytosolic), class A member 1		10	133
+HSPA1A	160	heat shock 70kDa protein 1A		31	56
+HSPA1B	161	heat shock 70kDa protein 1B		4	16
+HSPA8	199	heat shock 70kDa protein 8		12	84
+HSPA9	152	heat shock 70kDa protein 9 (mortalin)		4	40
+HSPD1	159	heat shock 60kDa protein 1 (chaperonin)		6	52
+HTRA2	294	HtrA serine peptidase 2		0	11
+HTT	98	huntingtin		17	35
+IFNB1	308	Interferon beta		0	1
+IGF1	28	insulin-like growth factor 1 (somatomedin C)		118	8
+IGF1R	15	insulin-like growth factor 1 receptor		36	34
+IGF2	29	insulin-like growth factor 2		21	2
+IGFBP2	279	insulin-like growth factor binding protein 2, 36kDa		1	2
+IGFBP3	73	insulin-like growth factor binding protein 3		10	8
+IKBKB	297	inhibitor of kappa light polypeptide gene enhancer in B-cells, kinase beta		0	53
+IL2	46	interleukin 2		7	2
+IL2RG	49	interleukin 2 receptor, gamma		2	6
+IL6	144	interleukin 6		23	0
+IL7	167	interleukin 7		6	2
+IL7R	27	interleukin 7 receptor		5	4
+INS	30	insulin		77	4
+INSR	42	insulin receptor		33	26
+IRS1	32	insulin receptor substrate 1		21	48
+IRS2	34	insulin receptor substrate 2		16	26
+JAK2	215	Janus kinase 2		9	49
+JUN	172	jun proto-oncogene		22	101
+JUND	45	jun D proto-oncogene		7	24
+KCNA3	268	potassium channel, voltage gated shaker related subfamily A, member 3		6	2
+KL	17	klotho		33	0
+LEP	217	leptin		36	2
+LEPR	218	leptin receptor		14	2
+LMNA	14	lamin A/C		61	43
+LMNB1	181	lamin B1		5	18
+LRP2	134	low density lipoprotein receptor-related protein 2		2	8
+MAP3K5	179	mitogen-activated protein kinase kinase kinase 5		4	29
+MAPK14	168	mitogen-activated protein kinase 14		28	55
+MAPK3	175	mitogen-activated protein kinase 3		12	39
+MAPK8	163	mitogen-activated protein kinase 8		26	71
+MAPK9	174	mitogen-activated protein kinase 9		16	33
+MAPT	205	microtubule-associated protein tau		35	39
+MAX	208	MYC associated factor X		5	31
+MDM2	210	MDM2 proto-oncogene, E3 ubiquitin protein ligase		9	115
+MED1	173	mediator complex subunit 1		2	25
+MIF	290	macrophage migration inhibitory factor (glycosylation-inhibiting factor)		0	9
+MLH1	243	mutL homolog 1		5	28
+MSRA	127	methionine sulfoxide reductase A		11	0
+MT-CO1	158	mitochondrially encoded cytochrome c oxidase I		5	1
+MT1E	292	metallothionein 1E		0	0
+MTOR	221	mechanistic target of rapamycin (serine/threonine kinase)		26	49
+MXD1	209	MAX dimerization protein 1		2	14
+MXI1	90	MAX interactor 1, dimerization protein		3	6
+MYC	39	v-myc avian myelocytomatosis viral oncogene homolog		22	119
+NBN	44	nibrin		22	38
+NCOR1	43	nuclear receptor corepressor 1		6	60
+NCOR2	276	nuclear receptor corepressor 2		1	52
+NFE2L1	307	nuclear factor, erythroid 2-like 1		0	5
+NFE2L2	283	nuclear factor, erythroid 2-like 2		7	36
+NFKB1	82	nuclear factor of kappa light polypeptide gene enhancer in B-cells 1		25	59
+NFKB2	20	nuclear factor of kappa light polypeptide gene enhancer in B-cells 2 (p49/p100)		24	17
+NFKBIA	219	nuclear factor of kappa light polypeptide gene enhancer in B-cells inhibitor, alpha		9	42
+NGF	31	nerve growth factor (beta polypeptide)		13	4
+NGFR	37	nerve growth factor receptor		5	13
+NOG	229	noggin		7	1
+NR3C1	75	nuclear receptor subfamily 3, group C, member 1 (glucocorticoid receptor)		14	69
+NRG1	24	neuregulin 1		6	6
+NUDT1	296	nudix (nucleoside diphosphate linked moiety X)-type motif 1		0	0
+PAPPA	254	pregnancy-associated plasma protein A, pappalysin 1		8	2
+PARP1	60	poly (ADP-ribose) polymerase 1		39	91
+PCK1	248	phosphoenolpyruvate carboxykinase 1 (soluble)		2	8
+PCMT1	162	protein-L-isoaspartate (D-aspartate) O-methyltransferase		5	20
+PCNA	113	proliferating cell nuclear antigen		12	67
+PDGFB	47	platelet-derived growth factor beta polypeptide		7	5
+PDGFRA	285	platelet-derived growth factor receptor, alpha polypeptide		4	17
+PDGFRB	51	platelet-derived growth factor receptor, beta polypeptide		4	23
+PDPK1	87	3-phosphoinositide dependent protein kinase 1		4	11
+PEX5	58	peroxisomal biogenesis factor 5		4	10
+PIK3CA	286	phosphatidylinositol-4,5-bisphosphate 3-kinase, catalytic subunit alpha		1	20
+PIK3CB	36	phosphatidylinositol-4,5-bisphosphate 3-kinase, catalytic subunit beta		22	12
+PIK3R1	185	phosphoinositide-3-kinase, regulatory subunit 1 (alpha)		16	65
+PIN1	62	peptidylprolyl cis/trans isomerase, NIMA-interacting 1		9	46
+PLAU	10	plasminogen activator, urokinase		9	8
+PLCG2	57	phospholipase C, gamma 2 (phosphatidylinositol-specific)		6	18
+PMCH	242	pro-melanin-concentrating hormone		6	0
+PML	96	promyelocytic leukemia		11	89
+POLA1	204	polymerase (DNA directed), alpha 1, catalytic subunit		9	22
+POLB	236	polymerase (DNA directed), beta		14	16
+POLD1	118	polymerase (DNA directed), delta 1, catalytic subunit		11	14
+POLG	72	polymerase (DNA directed), gamma		11	0
+PON1	142	paraoxonase 1		10	2
+POU1F1	4	POU class 1 homeobox 1		20	14
+PPARA	55	peroxisome proliferator-activated receptor alpha		13	22
+PPARG	263	peroxisome proliferator-activated receptor gamma		8	63
+PPARGC1A	256	peroxisome proliferator-activated receptor gamma, coactivator 1 alpha		15	30
+PPM1D	246	protein phosphatase, Mg2+/Mn2+ dependent, 1D		1	4
+PPP1CA	227	protein phosphatase 1, catalytic subunit, alpha isozyme		3	56
+PRDX1	141	peroxiredoxin 1		4	29
+PRKCA	99	protein kinase C, alpha		4	39
+PRKCD	54	protein kinase C, delta		4	41
+PRKDC	106	protein kinase, DNA-activated, catalytic polypeptide		16	89
+PROP1	5	PROP paired-like homeobox 1		29	2
+PSEN1	224	presenilin 1		18	15
+PTEN	63	phosphatase and tensin homolog		16	46
+PTGS2	198	prostaglandin-endoperoxide synthase 2 (prostaglandin G/H synthase and cyclooxygenase)		11	15
+PTK2	166	protein tyrosine kinase 2		5	43
+PTK2B	165	protein tyrosine kinase 2 beta		2	23
+PTPN1	33	protein tyrosine phosphatase, non-receptor type 1		5	28
+PTPN11	19	protein tyrosine phosphatase, non-receptor type 11		7	47
+PYCR1	280	pyrroline-5-carboxylate reductase 1		1	2
+RAD51	84	RAD51 recombinase		10	37
+RAD52	147	RAD52 homolog, DNA repair protein		3	27
+RAE1	241	ribonucleic acid export 1		2	12
+RB1	120	retinoblastoma 1		46	96
+RECQL4	128	RecQ helicase-like 4		11	8
+RELA	143	v-rel avian reticuloendotheliosis viral oncogene homolog A		32	93
+RET	56	ret proto-oncogene		4	15
+RGN	145	regucalcin		6	2
+RICTOR	303	RPTOR independent companion of MTOR, complex 2		0	20
+RPA1	67	replication protein A1, 70kDa		5	73
+S100B	70	S100 calcium binding protein B		7	7
+SDHC	182	succinate dehydrogenase complex, subunit C, integral membrane protein, 15kDa		5	4
+SERPINE1	301	serpin peptidase inhibitor, clade E (nexin, plasminogen activator inhibitor type 1), member 1		0	3
+SHC1	3	SHC (Src homology 2 domain containing) transforming protein 1		29	67
+SIN3A	200	SIN3 transcription regulator family member A		3	34
+SIRT1	150	sirtuin 1		82	95
+SIRT3	275	sirtuin 3		4	12
+SIRT6	239	sirtuin 6		15	28
+SIRT7	269	sirtuin 7		3	38
+SLC13A1	270	solute carrier family 13 (sodium/sulfate symporter), member 1		3	0
+SNCG	140	synuclein, gamma (breast cancer-specific protein 1)		5	8
+SOCS2	271	suppressor of cytokine signaling 2		7	12
+SOD1	130	superoxide dismutase 1, soluble		45	29
+SOD2	129	superoxide dismutase 2, mitochondrial		55	11
+SP1	170	Sp1 transcription factor		13	93
+SPRTN	302	SprT-like N-terminal domain		0	20
+SQSTM1	298	sequestosome 1		0	49
+SST	53	somatostatin		8	2
+SSTR3	100	somatostatin receptor 3		2	2
+STAT3	22	signal transducer and activator of transcription 3 (acute-phase response factor)		13	83
+STAT5A	23	signal transducer and activator of transcription 5A		5	35
+STAT5B	21	signal transducer and activator of transcription 5B		5	21
+STK11	93	serine/threonine kinase 11		5	18
+STUB1	245	STIP1 homology and U-box containing protein 1, E3 ubiquitin protein ligase		1	69
+SUMO1	211	small ubiquitin-like modifier 1		6	49
+SUN1	277	Sad1 and UNC84 domain containing 1		1	0
+TAF1	180	TAF1 RNA polymerase II, TATA box binding protein (TBP)-associated factor, 250kDa		1	26
+TBP	194	TATA box binding protein		6	45
+TCF3	59	transcription factor 3		7	13
+TERC	7	telomerase RNA component		34	2
+TERF1	105	telomeric repeat binding factor (NIMA-interacting) 1		9	45
+TERF2	116	telomeric repeat binding factor 2		18	43
+TERT	8	telomerase reverse transcriptase		62	32
+TFAP2A	190	transcription factor AP-2 alpha (activating enhancer binding protein 2 alpha)		7	30
+TFDP1	202	transcription factor Dp-1		4	14
+TGFB1	91	transforming growth factor, beta 1		25	2
+TNF	86	tumor necrosis factor		20	11
+TOP1	83	topoisomerase (DNA) I		9	36
+TOP2A	80	topoisomerase (DNA) II alpha		8	42
+TOP2B	81	topoisomerase (DNA) II beta		8	24
+TOP3B	148	topoisomerase (DNA) III beta		7	4
+TP53	6	tumor protein p53		139	221
+TP53BP1	274	tumor protein p53 binding protein 1		7	42
+TP63	234	tumor protein p63		9	37
+TP73	281	tumor protein p73		3	41
+TPP2	273	tripeptidyl peptidase II		2	4
+TRAP1	305	TNF receptor-associated protein 1		0	12
+TRPV1	306	transient receptor potential cation channel subfamily V member 1		0	3
+TXN	16	thioredoxin		15	30
+UBB	66	ubiquitin B		8	10
+UBE2I	85	ubiquitin-conjugating enzyme E2I		5	113
+UCHL1	136	ubiquitin carboxyl-terminal esterase L1 (ubiquitin thiolesterase)		6	22
+UCP1	258	uncoupling protein 1 (mitochondrial, proton carrier)		5	0
+UCP2	235	uncoupling protein 2 (mitochondrial, proton carrier)		22	2
+UCP3	232	uncoupling protein 3 (mitochondrial, proton carrier)		22	2
+VCP	71	valosin containing protein		3	83
+VEGFA	77	vascular endothelial growth factor A		15	7
+WRN	13	Werner syndrome, RecQ helicase-like		88	47
+XPA	126	xeroderma pigmentosum, complementation group A		15	18
+XRCC5	112	X-ray repair complementing defective repair in Chinese hamster cells 5 (double-strand-break rejoining)		24	69
+XRCC6	117	X-ray repair complementing defective repair in Chinese hamster cells 6		19	79
+YWHAZ	164	tyrosine 3-monooxygenase/tryptophan 5-monooxygenase activation protein, zeta		3	59
+ZMPSTE24	233	zinc metallopeptidase STE24		13	2
