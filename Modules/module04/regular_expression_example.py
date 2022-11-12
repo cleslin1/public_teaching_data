@@ -12,7 +12,7 @@ def print_unigene_data_data(file=None):  # noqa: C901  this if for flake8 ignori
     @param file:  a fh_in and parses with regular expression
     @return: None
     """
-    reg_exps = _get_compiled_regex()
+    reg_exps = get_compiled_regex()
     # go over lines and store
     with open(file, "r") as in_fh:
         for line in in_fh:
@@ -25,7 +25,7 @@ def print_unigene_data_data(file=None):  # noqa: C901  this if for flake8 ignori
                     print(f"{key}: {match.group(1)}")
 
 
-def _get_compiled_regex():
+def get_compiled_regex():
     """
     You can speed up your searches and matches by 'compiling' the regex,
     Note the keyword compile.  This just return a dictionary of those compiled matches.
