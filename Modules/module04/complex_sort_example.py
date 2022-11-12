@@ -73,3 +73,14 @@ def get_relevant_skills(item):
 
 if __name__ == '__main__':
     main()
+
+
+
+num_list = [1, -5, 3, -9, 25, 10]
+
+def absolute_value(num):
+    return abs(num)
+
+new_list = sorted(num_list, key = absolute_value)
+print(new_list)
+# [1, 3, -5, -9, 10, 25]

@@ -7,6 +7,8 @@ def main():
     # print out the values
     _ = [print(key, value) for key, value in aa_values.items()]
     print("\n\n")
+
+
     # sort the dictionary by the weight of the amino acid.  When you have a list or a tuple
     # you have to use lambda to be nice an concise, b/c here you can print by the 3 index
     for key in sorted(aa_values.keys(), key=lambda x: aa_values[x][3], reverse=True):
