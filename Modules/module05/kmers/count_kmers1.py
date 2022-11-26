@@ -61,11 +61,3 @@ def test_code():
 if __name__ == '__main__':
     main()
     test_code()
-
-
-(BINF6200) cleslin@Chesleys-MacBook-Pro[kmers]$ python3 count_kmers1.py
-TTTGGCATACTGACAGATAA
-(BINF6200) cleslin@Chesleys-MacBook-Pro[kmers]$ python3 count_kmers1.py
-AACGCTCTTACTCCCTGTGT
-(BINF6200) cleslin@Chesleys-MacBook-Pro[kmers]$ python3 count_kmers1.py
-CGWWGGCNGNGCNAGANTGC
