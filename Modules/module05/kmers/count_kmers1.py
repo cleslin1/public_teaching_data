@@ -1,13 +1,12 @@
 """Code to count DNA trinucleotides and then store them in a Dict and sort them out"""
+import sys
 
 from utils import generate_random_dna_str, print_trinucleotides
 
 
 def main():
     """Simple function to call our other functions"""
-    dna = generate_random_dna_str(20, 'ACGTNSW')  # get a randome dna sequence of 2000bp
-    print(dna)
-    quit()
+    dna = generate_random_dna_str(200_000_000, 'ACGT')  # get a random dna sequence of 2000bp
     counts = count_trinucleotides(dna)
     print_trinucleotides(counts, threshold=1000)
 
@@ -53,8 +52,8 @@ def test_code():
     Simple test of the code
     @return: None
     """
-    counts = count_trinucleotides("GATTACA")
-    expected = {'GAT': 1, 'ATT': 1, 'TTA': 1, 'TAC': 1, 'ACA': 1}
+    counts = count_trinucleotides("GATTACATT")
+    expected = {'ACA': 1, 'ATT': 2, 'GAT': 1, 'CAT': 1, 'TAC': 1, 'TTA': 1}
     assert counts == expected
 
 

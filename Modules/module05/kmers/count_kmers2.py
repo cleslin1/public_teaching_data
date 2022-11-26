@@ -4,7 +4,7 @@ from utils import generate_random_dna_str, print_trinucleotides
 
 def main():
     """Simple function to call our other functions"""
-    dna = generate_random_dna_str(200000, 'ACGT')  # get a randome dna sequence of 2000bp
+    dna = generate_random_dna_str(200_000_000, 'ACGT')  # get a random dna sequence of 2000bp
     counts = count_kmer(dna)
     print_trinucleotides(counts, threshold=1000)
 
@@ -12,9 +12,9 @@ def main():
 def count_kmer(dna, kmer_len=3):
     '''
     Count the number of kmers that occur in the sequence dna (including overlapping occurrences)
-    sample use: count_mer("GGG", "AGGGCGGG") => 2
     @param dna: The sequence to explore for kmers
-    @parm kmer_len: Int of the kmer size
+    @param kmer_len: Int of the kmer size
+    @return: Dict of kmers with the value being the number of times it was found in the DNA String
     '''
 
     kmers = {}
@@ -29,12 +29,11 @@ def test_code():
     Simple test of the code
     @return: None
     """
-    counts = count_kmer('GATTACA', kmer_len=3)
-    expected = {'GAT': 1, 'ATT': 1, 'TTA': 1, 'TAC': 1, 'ACA': 1}
+    counts = count_kmer('GATTACATT', kmer_len=3)
+    expected = {'ACA': 1, 'ATT': 2, 'GAT': 1, 'CAT': 1, 'TAC': 1, 'TTA': 1}
     assert counts == expected
 
     counts = count_kmer('GATTACA', kmer_len=4)
-    print(counts)
     expected = {'GATT': 1, 'ATTA': 1, 'TTAC': 1, 'TACA': 1}
     assert counts == expected
 
