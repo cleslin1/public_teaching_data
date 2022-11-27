@@ -39,7 +39,6 @@ def compare_genomes(seq1: str, seq2: str) -> None:
     @param seq2: DNA seq2
     @return: None
     """
-    print(seq1)
     # go over different kmer lengths and find the jaccard index and jaccard containment
     for kmer_len in range(2, 31, 1):
         # get the counts
@@ -54,7 +53,7 @@ def compare_genomes(seq1: str, seq2: str) -> None:
               f"jaccard_containment: {jaccard_containment(container1=counts1, container2=counts2)}")
 
 
-def jaccard_index(container1: list, container2: list) -> float:
+def jaccard_index(container1: list, container2: list, sig_dig: int = 4) -> float:
     """
     Given any two collections of k-mers, we can calculate Jaccard Index using the union functionality in Python
     The Jaccard index, is a statistic used for gauging the similarity and diversity of sample sets
@@ -66,6 +65,7 @@ def jaccard_index(container1: list, container2: list) -> float:
 
     @param container1: list of kmers1
     @param container2: list of kmer2
+    @param sig_dig: Significant digits to round to
     @return: float
     """
     container1 = set(container1)
@@ -74,10 +74,10 @@ def jaccard_index(container1: list, container2: list) -> float:
     intersection = len(container1.intersection(container2))
     union = len(container1.union(container2))
 
-    return intersection / union
+    return round(intersection / union, sig_dig)
 
 
-def jaccard_containment(container1: list, container2: list) -> float:
+def jaccard_containment(container1: list, container2: list, sig_dig: int = 4) -> float:
     """
     Given any two collections of k-mers, we can calculate containment using the intersection functionality in Python.
 
@@ -87,6 +87,7 @@ def jaccard_containment(container1: list, container2: list) -> float:
 
     @param container1: list of kmers1
     @param container2: list of kmer2
+    @param sig_dig: Significant digits to round to
     @return: float
     """
     container1 = set(container1)
@@ -94,7 +95,7 @@ def jaccard_containment(container1: list, container2: list) -> float:
 
     intersection = len(container1.intersection(container2))
 
-    return intersection / len(container1)
+    return round(intersection / len(container1), sig_dig)
 
 
 def get_filehandle(file: str = None, mode: str = None) -> TextIO:
