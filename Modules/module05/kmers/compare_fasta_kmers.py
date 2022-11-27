@@ -1,5 +1,5 @@
 """
-Compare two FASTA files for kmer jaccard similarity (index) and containment
+Compare two FASTA files for kmer jaccard index and containment
 Using Code we've learned through the semester
 """
 import argparse
@@ -10,42 +10,63 @@ from count_kmers2 import count_kmer
 
 
 def main():
-    """Business Logic"""
+    """
+    Business Logic
+    Assumptions here:  Each FASTA file provided at the command line only has 1 sequence in it, since only the first
+    sequence in the file will be analyzed
+    """
     args = get_cli_args()
     infile1, infile2 = args.infile1, args.infile2
 
     fh_in1 = get_filehandle(file=infile1, mode="r")
-    # get the two lists of data
+    # get the two lists of data for the first file
     _, seqs1 = get_fasta_lists(fh_in1)
 
     fh_in2 = get_filehandle(file=infile2, mode="r")
-    # get the two lists of data
+    # get the two lists of data for the second file
     _, seqs2 = get_fasta_lists(fh_in2)
-
-    for kmer_len in range(5, 11, 1):
-        counts1 = count_kmer(seqs1[0], kmer_len=kmer_len).keys()
-        print("Got counts for FASTA set 1")
-        counts2 = count_kmer(seqs2[0], kmer_len=kmer_len).keys()
-        print("Got counts for FASTA set 2")
-
-        print(f"kmer_len: {kmer_len}, "
-              f"jaccard_similarity: {jaccard_similarity(container1=counts1, container2=counts2)}")
-        print(f"kmer_len: {kmer_len}, "
-              f"jaccard_containment: {jaccard_containment(container1=counts1, container2=counts2)}")
 
     fh_in1.close()
     fh_in2.close()
 
+    compare_genomes(seq1=seqs1[0], seq2=seqs2[0])
 
-def jaccard_similarity(container1: list = None, container2: list = None) -> float:
+
+def compare_genomes(seq1: str, seq2: str) -> None:
     """
-    Given any two collections of k-mers, we can calculate similarity
-    using the union functionality in Python
-    The Jaccard  similarity coefficient (or Jaccard Index), is a statistic used for gauging the similarity and
-    diversity of sample sets
+    Go over each FASTA sequence and compare them using kmers
+    @param seq1: DNA seq1
+    @param seq2: DNA seq2
+    @return: None
+    """
+
+    # go over different kmer lengths and find the jaccard index and jaccard containment
+    for kmer_len in range(2, 31, 1):
+        # get the counts
+        counts1 = count_kmer(seq1, kmer_len=kmer_len).keys()  # get all k-mers
+        counts2 = count_kmer(seq2, kmer_len=kmer_len).keys()  # get all k-mers
+
+        # print out the jaccard index
+        print(f"kmer_len: {kmer_len}, "
+              f"jaccard_index: {jaccard_index(container1=counts1, container2=counts2)}")
+        # print out the jaccard containment
+        print(f"kmer_len: {kmer_len}, "
+              f"jaccard_containment: {jaccard_containment(container1=counts1, container2=counts2)}")
+
+
+def jaccard_index(container1: list, container2: list) -> float:
+    """
+    Given any two collections of k-mers, we can calculate Jaccard Index using the union functionality in Python
+    The Jaccard index, is a statistic used for gauging the similarity and diversity of sample sets
+
+    Here the similarity of two sets is found by comparing the relative size of the intersection over the union
+    (Broder, 1997). For two non-empty finite sets A and B, the Jaccard index is defined as:
+    J(A,B) = |A∩B| / |A∪B|
+    Hence, 0 ≤ J(A,B) ≤ 1 with larger values indicating more overlap.
+
     @param container1: list of kmers1
     @param container2: list of kmer2
-    @return: flot
+    @return: float
     """
     container1 = set(container1)
     container2 = set(container2)
@@ -56,13 +77,17 @@ def jaccard_similarity(container1: list = None, container2: list = None) -> floa
     return intersection / union
 
 
-def jaccard_containment(container1: list = None, container2: list = None) -> float:
+def jaccard_containment(container1: list, container2: list) -> float:
     """
-    Given any two collections of k-mers, we can calculate
-     containment using the intersection functionality in Python.
+    Given any two collections of k-mers, we can calculate containment using the intersection functionality in Python.
+
+    Similarly, the containment index (CI) of A in B (with A non-empty) measures the relative size of the intersection
+    over the size of A: C(A,B) = |A∩B| / |A|
+    So 0 ≤ C(A,B) ≤ 1 with larger values indicating that more content of A resides in B.
+
     @param container1: list of kmers1
     @param container2: list of kmer2
-    @return: flot
+    @return: float
     """
     container1 = set(container1)
     container2 = set(container2)
