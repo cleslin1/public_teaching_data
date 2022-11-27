@@ -39,7 +39,7 @@ def compare_genomes(seq1: str, seq2: str) -> None:
     @param seq2: DNA seq2
     @return: None
     """
-
+    print(seq1)
     # go over different kmer lengths and find the jaccard index and jaccard containment
     for kmer_len in range(2, 31, 1):
         # get the counts
