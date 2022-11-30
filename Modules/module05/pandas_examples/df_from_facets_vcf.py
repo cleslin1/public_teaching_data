@@ -7,11 +7,20 @@ import pandas as pd
 
 
 def main():
-    """Business Logic"""
+    """Business Logic to show some Pandas functions"""
     args = get_cli_args()
     facets_df = return_df_from_vcf_file(facets_vcf_file=args.facets_vcf_file)
-    print(facets_df.head())
+    # filter the df where SVTYPE is 'DUP'
+    facets_df_filtered = facets_df[facets_df['SVTYPE'] == 'DUP']
+    # filter the df where SVTYPE is 'DUP' and CHROM == 14
+    facets_df_filtered2 = facets_df[(facets_df['SVTYPE'] == 'DUP') & (facets_df['CHROM'] == '14')]
+    # print out the full df
     facets_df.to_csv("facets_vcf.tsv", sep='\t', header=True)
+    # print out the filtered data frames
+    facets_df_filtered.to_csv("facets_vcf_filtered.tsv", sep='\t', header=True)
+    facets_df_filtered2.to_csv("facets_df_filtered2.tsv", sep='\t', header=True)
+    # print out the head
+    print(facets_df_filtered.head())
 
 
 def return_df_from_vcf_file(facets_vcf_file: str = None) -> pd.DataFrame:
@@ -23,7 +32,8 @@ def return_df_from_vcf_file(facets_vcf_file: str = None) -> pd.DataFrame:
     # Parse out the INFO column and create a new data frame that will be merged
     # Browsing a Series is much faster that iterating across the rows of a dataframe.
     vcf_df_updated = pd.DataFrame([dict([x.split('=') for x in t.split(';')])
-                                   for t in vcf_df['INFO']], index=vcf_df['ID']).reset_index()
+                                   for t in vcf_df['INFO']],
+                                  index=vcf_df['ID']).reset_index()
     # two data frames should be the same, so just join on ID for the VCF output, since this is unique for one
     # Facets VCF file_name
     assert len(vcf_df) == len(vcf_df_updated)
