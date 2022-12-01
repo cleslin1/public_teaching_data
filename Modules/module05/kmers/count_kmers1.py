@@ -1,17 +1,15 @@
 """Code to count DNA trinucleotides and then store them in a Dict and sort them out"""
-import sys
-
 from utils import generate_random_dna_str, print_trinucleotides
 
 
-def main():
+def main() -> None:
     """Simple function to call our other functions"""
     dna = generate_random_dna_str(200_000_000, 'ACGT')  # get a random dna sequence of 2000bp
     counts = count_trinucleotides(dna)
     print_trinucleotides(counts, threshold=1000)
 
 
-def count_kmer(kmer, dna):
+def count_kmer(kmer: str, dna: str) -> dict:
     '''
     Counts the number of times a substring mer occurs in the sequence dna (including overlapping occurrences)
     sample use: count_mer("GGG", "AGGGCGGG") => 2
@@ -27,7 +25,7 @@ def count_kmer(kmer, dna):
     return count
 
 
-def count_trinucleotides(dna, alphabet='AGCT'):
+def count_trinucleotides(dna: str, alphabet: str = 'AGCT') -> dict:
     """
     Count the trinucleotides in a string
     @param dna: DNA string to count
@@ -47,7 +45,7 @@ def count_trinucleotides(dna, alphabet='AGCT'):
     return counts
 
 
-def test_code():
+def test_code() -> None:
     """
     Simple test of the code
     @return: None

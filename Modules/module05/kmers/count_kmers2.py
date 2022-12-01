@@ -2,14 +2,14 @@
 from utils import generate_random_dna_str, print_trinucleotides
 
 
-def main():
+def main() -> None:
     """Simple function to call our other functions"""
     dna = generate_random_dna_str(200_000_000, 'ACGT')  # get a random dna sequence of 2000bp
     counts = count_kmer(dna)
     print_trinucleotides(counts, threshold=1000)
 
 
-def count_kmer(dna, kmer_len=3):
+def count_kmer(dna: str, kmer_len: int = 3) -> dict:
     '''
     Count the number of kmers that occur in the sequence dna (including overlapping occurrences)
     @param dna: The sequence to explore for kmers
@@ -24,7 +24,7 @@ def count_kmer(dna, kmer_len=3):
     return kmers
 
 
-def test_code():
+def test_code() -> None:
     """
     Simple test of the code
     @return: None

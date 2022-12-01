@@ -6,7 +6,7 @@ import io
 import pandas as pd
 
 
-def main():
+def main() -> None:
     """Business Logic to show some Pandas functions"""
     args = get_cli_args()
     facets_df = return_df_from_vcf_file(facets_vcf_file=args.facets_vcf_file)
