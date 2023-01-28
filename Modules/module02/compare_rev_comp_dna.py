@@ -5,6 +5,7 @@ import random
 
 def main():
     """Business Logic"""
+    test_code()
     run_code()
 
 
@@ -71,6 +72,18 @@ def generate_random_dna_str(num, alphabet='AGCT'):
     @return: string
     """
     return ''.join([random.choice(alphabet) for i in range(num)])
+
+
+def test_code():
+    """Test the functions work"""
+    dna = 'ATGCAGCTGTGTTACGCGAT'
+    rev_comp_dna = 'ATCGCGTAACACAGCTGCAT'
+
+    rev_com_dna_to_test = rev_comp1(dna)
+    assert rev_comp_dna == rev_com_dna_to_test, "rev_comp1 did not work"
+
+    rev_com_dna_to_test = rev_comp2(dna)
+    assert rev_comp_dna == rev_com_dna_to_test, "rev_comp2 did not work"
 
 
 if __name__ == '__main__':
