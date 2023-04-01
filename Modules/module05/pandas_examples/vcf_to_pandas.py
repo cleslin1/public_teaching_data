@@ -31,7 +31,7 @@ def get_loh_genes() -> list:
     Just a list of genes known to be important in LOH
     list came from
     https://aacrjournals.org/clincancerres/article/28/7/1412/682202/Pan-cancer-Analysis-of-Homologous-Recombination
-    :return: list of genes
+    @return: list of genes
     """
 
     return ['ATM', 'ATR', 'ATRX', 'BAP1', 'BARD1', 'BRCA1', 'BRCA2', 'BRIP1', 'CHEK1', 'CHEK2', 'MRE11', 'NBN',
@@ -41,7 +41,7 @@ def get_loh_genes() -> list:
 def get_del_genes() -> list:
     """
     Just a list of genes known to be important when there's deletions
-    :return: list of genes
+    @return: list of genes
     """
 
     return ['BRCA1', 'BRCA2', 'PTEN', 'RB1', 'TP53']
@@ -66,17 +66,17 @@ def update_gene_cols(df: pd.DataFrame = None, svtype_list: list = None,
 def is_gene_positive(row: pd.Series = None, gene: str = None, svtype_list: list = None) -> bool:
     """
     Is the Pandas series contain a gene was event of the type SVTYPE passed in
-    :param row: Pandas series
-    :param gene: Gene to search for
-    :return: Bool
+    @param row: Pandas series
+    @param gene: Gene to search for
+    @return: Bool
     """
     return bool(gene in row['CNV_ANN'] and row['SVTYPE'] in svtype_list)
 
 
 def get_facets_vcf_df(facets_vcf_file: str = None) -> pd.DataFrame:
     """
-    :param facets_vcf_file: string of the VCF file open
-    :return: Return a pandas data frame of the VCF, with discrete elements for the INFO column
+    @param facets_vcf_file: string of the VCF file open
+    @return: Return a pandas data frame of the VCF, with discrete elements for the INFO column
     """
     vcf_df = _read_dataset_and_get_pandas_df(col_vals=_get_columns_from_facets_vcf(),
                                              file_name=facets_vcf_file,
@@ -102,7 +102,7 @@ def get_facets_vcf_df(facets_vcf_file: str = None) -> pd.DataFrame:
 
 def _get_columns_from_facets_vcf() -> dict:
     """
-    :return: dictionary columns (keys) with types (values) from a VCF file for FACETS
+    @return: dictionary columns (keys) with types (values) from a VCF file for FACETS
     """
 
     col_vals = {
@@ -121,10 +121,10 @@ def _get_columns_from_facets_vcf() -> dict:
 def _read_dataset_and_get_pandas_df(col_vals: dict = None, file_name: str = None, keep_default_na: bool = True,
                                     ignore_line_starts_with: str = "#") -> pd.DataFrame:
     """
-    :param col_vals: Dictionary of column names and types
-    :param file_name: File to open
-    :param keep_default_na: Boolean to keep the NAs or covert them via Pandas
-    :param ignore_line_starts_with: What character to ignore, default #
+    @param col_vals: Dictionary of column names and types
+    @param file_name: File to open
+    @param keep_default_na: Boolean to keep the NAs or covert them via Pandas
+    @param ignore_line_starts_with: What character to ignore, default #
     Input:  The column values as a dictionary with the key = to the column, and the value = type, e.g. int, str, etc
     Output: pandas data frame
     """
@@ -147,7 +147,7 @@ def get_cli_args() -> argparse:
     """
     Get the argparse instance
     Takes: no arguments
-    :return: instance of argparse arguments
+    @return: instance of argparse arguments
     """
 
     parser = argparse.ArgumentParser(description="This caller will take a VCF from FACETS and calculate the "
