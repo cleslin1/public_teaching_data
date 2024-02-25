@@ -1,0 +1,1 @@
+curl 'https://grch37.rest.ensembl.org/ga4gh/variants/search' -H 'Content-type:application/json' -H 'Accept:application/json' -X POST -d '{ "variantSetId": 3, "callSetIds":[ "3:NA19777"  , "3:HG01242" , "3:HG01142"   ], "referenceName": 7,"start": 55084710 ,"end":  55281321 ,  "pageToken":"", "pageSize": 309 }' >egfr.jso
