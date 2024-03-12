@@ -1,4 +1,4 @@
-HGNC    Symbol  HAGRID  Common name Function(s) References  Interactions
+HGNC    Symbol	HAGRID	Common name Function(s)	References	Interactions
 A2M	139	alpha-2-macroglobulin		5	21
 ABL1	78	ABL proto-oncogene 1, non-receptor tyrosine kinase		5	69
 ADCY5	255	adenylate cyclase 5		1	1
