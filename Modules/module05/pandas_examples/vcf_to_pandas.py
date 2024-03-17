@@ -15,15 +15,15 @@ def main() -> None:
 
     args = get_cli_args()
     # get the data frame from the facets output
-    df = get_facets_vcf_df(facets_vcf_file=args.facets_vcf_file)
+    data_frame = get_facets_vcf_df(facets_vcf_file=args.facets_vcf_file)
     # update for loh level events in a list of genes
-    update_gene_cols(df=df, svtype_list=['LOH', 'DUP-LOH', 'HEMIZYG'], column_name="loh_positive",
+    update_gene_cols(data_frame=data_frame, svtype_list=['LOH', 'DUP-LOH', 'HEMIZYG'], column_name="loh_positive",
                      genes=get_loh_genes())
     # update for deletion level events in a list of genes
-    update_gene_cols(df=df, svtype_list=['DEL'], column_name="loss_positive",
+    update_gene_cols(data_frame=data_frame, svtype_list=['DEL'], column_name="loss_positive",
                      genes=get_del_genes())  # no 'DUP-LOH, 'LOH', 'HEMIZYG'
     # output the results
-    df.to_excel("test.xlsx")
+    data_frame.to_excel("facets_vcf.xlsx")
 
 
 def get_loh_genes() -> list:
@@ -47,20 +47,20 @@ def get_del_genes() -> list:
     return ['BRCA1', 'BRCA2', 'PTEN', 'RB1', 'TP53']
 
 
-def update_gene_cols(df: pd.DataFrame = None, svtype_list: list = None,
+def update_gene_cols(data_frame: pd.DataFrame = None, svtype_list: list = None,
                      column_name: str = None, genes: list = None) -> None:
     """
     Update the data frame with new columns if there was a match to certain genes
-    @param df: DataFrame to check
+    @param data_frame: DataFrame to check
     @param svtype_list: structural variant type to look for
     @param column_name: column name for the dataframe
     @param genes: list of genes to look for
     @return: None
     """
     for gene in genes:
-        df[f'{gene}_{column_name}'] = \
-            df.apply(lambda x, y=gene: is_gene_positive(row=x, gene=y,
-                                                        svtype_list=svtype_list), axis=1)
+        data_frame[f'{gene}_{column_name}'] = \
+            data_frame.apply(lambda x, y=gene: is_gene_positive(row=x, gene=y,
+                                                                svtype_list=svtype_list), axis=1)
 
 
 def is_gene_positive(row: pd.Series = None, gene: str = None, svtype_list: list = None) -> bool:
@@ -126,13 +126,13 @@ def _read_dataset_and_get_pandas_df(col_vals: dict = None, file_name: str = None
     @param keep_default_na: Boolean to keep the NAs or covert them via Pandas
     @param ignore_line_starts_with: What character to ignore, default #
     Input:  The column values as a dictionary with the key = to the column, and the value = type, e.g. int, str, etc
-    Output: pandas data frame
+    @return: pandas data frame
     """
 
     with open(file_name, 'r', encoding="utf8") as infh:
         lines = [lines for lines in infh if not lines.startswith(ignore_line_starts_with)]  # ignore comments
     # get the dataframe
-    df = pd.read_table(
+    data_frame = pd.read_table(
         # A text stream using an in-memory text buffer. It inherits TextIOBase.
         io.StringIO(''.join(lines)),
         usecols=list(col_vals.keys()),
@@ -140,7 +140,7 @@ def _read_dataset_and_get_pandas_df(col_vals: dict = None, file_name: str = None
         keep_default_na=keep_default_na,
         sep='\t'
     )
-    return df
+    return data_frame
 
 
 def get_cli_args() -> argparse:
